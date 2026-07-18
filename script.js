@@ -1,3 +1,5 @@
+alert("JavaScript is working!");
+
 const giftBtn = document.getElementById("giftBtn");
 
 giftBtn.addEventListener("click", () => {
