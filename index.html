@@ -135,9 +135,9 @@ Next ➜
 <script>
 const music=document.getElementById("bgMusic");
 
-document.getElementById("startBtn").onclick=async()=>{
-await music.play().catch(()=>{});
-document.getElementById("welcome").scrollIntoView({behavior:"smooth"});
+document.getElementById("startBtn").onclick = async () => {
+    await music.play().catch(() => {});
+    window.location.href = "welcome.html";
 };
 </script>
 
