@@ -17,7 +17,14 @@
 🎁
 </div>
 
-<p id="hiddenMessage" style="display:none;font-size:22px;margin-top:20px;">
+<p id="hiddenMessage"
+style="
+display:none;
+font-size:22px;
+margin-top:20px;
+opacity:0;
+transition:1.5s;
+">
 💖 Happy Birthday! 💖<br><br>
 
 You deserve all the happiness, smiles, laughter and love in the world.
@@ -36,9 +43,31 @@ const msg = document.getElementById("hiddenMessage");
 const btn = document.getElementById("finalBtn");
 
 gift.onclick = function(){
-    gift.innerHTML = "🎊";
-    msg.style.display = "block";
-    btn.style.display = "inline-block";
+
+    // Gift opens
+    gift.innerHTML = "🎉";
+
+    // Small animation
+    gift.style.transform = "scale(1.2)";
+    gift.style.transition = "0.5s";
+
+    setTimeout(()=>{
+        gift.style.transform = "scale(1)";
+    },500);
+
+    // Show message after a short delay
+    setTimeout(()=>{
+        msg.style.display="block";
+        setTimeout(()=>{
+    msg.style.opacity="1";
+},100);
+    },700);
+
+    // Show button after another delay
+    setTimeout(()=>{
+        btn.style.display="inline-block";
+    },1800);
+
 }
 </script>
 
