@@ -3,43 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Happy Birthday ❤️</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#060818,#1d1147,#5b1b8f);
+color:white;
+overflow-x:hidden;
+}
+
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:30px;
+text-align:center;
+}
+
+.card{
+background:rgba(255,255,255,.1);
+backdrop-filter:blur(18px);
+padding:30px;
+border-radius:20px;
+width:90%;
+max-width:700px;
+box-shadow:0 0 25px rgba(255,255,255,.2);
+}
+
+h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+p{
+font-size:20px;
+line-height:1.7;
+margin-bottom:25px;
+}
+
+button{
+padding:15px 35px;
+font-size:18px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+background:#ff4f81;
+color:white;
+}
+
+img{
+width:220px;
+border-radius:20px;
+margin:15px;
+}
+
+audio{
+display:none;
+}
+</style>
 </head>
 
 <body>
 
-<!-- Background Music -->
 <audio id="bgMusic" loop>
-    <source src="kangal-irandal.mp3" type="audio/mpeg">
+<source src="kangal-irandal.mp3" type="audio/mpeg">
 </audio>
 
-<div class="container">
+<section id="home">
+
+<div class="card">
 
 <h1>Happy Birthday ❤️</h1>
 
 <p>A little surprise has been made just for you...</p>
 
-<button id="giftBtn">🎁 Open Your Gift</button>
+<button id="startBtn">🎁 Open Your Gift</button>
 
 </div>
 
+</section>
+
+<section id="welcome">
+
+<div class="card">
+
+<h1>🎉 Happy Birthday! 🎉</h1>
+
+<p>
+Welcome to your magical birthday surprise...
+This is only the beginning. 💖
+</p>
+
+<button onclick="document.getElementById('memories').scrollIntoView({behavior:'smooth'})">
+✨ Continue
+</button>
+
+</div>
+
+</section>
+
 <script>
-const music = document.getElementById("bgMusic");
+const music=document.getElementById("bgMusic");
 
-document.getElementById("giftBtn").addEventListener("click", async function () {
-    try {
-        await music.play();
-    } catch (e) {
-        console.log(e);
-    }
-
-    setTimeout(() => {
-        window.location.href = "welcome.html";
-    }, 2000);
-});
+document.getElementById("startBtn").onclick=async()=>{
+await music.play().catch(()=>{});
+document.getElementById("welcome").scrollIntoView({behavior:"smooth"});
+};
 </script>
 
 </body>
