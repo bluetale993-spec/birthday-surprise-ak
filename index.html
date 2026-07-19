@@ -29,9 +29,16 @@
 <script>
 const music = document.getElementById("bgMusic");
 
-document.getElementById("giftBtn").addEventListener("click", function () {
-    music.play();
-    window.location.href = "welcome.html";
+document.getElementById("giftBtn").addEventListener("click", async function () {
+    try {
+        await music.play();
+    } catch (e) {
+        console.log(e);
+    }
+
+    setTimeout(() => {
+        window.location.href = "welcome.html";
+    }, 2000);
 });
 </script>
 
