@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do You Remember? ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ff758c,#ff7eb3);
+    color:white;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.container{
+    max-width:800px;
+    width:100%;
+    text-align:center;
+}
+
+h1{
+    margin-bottom:30px;
+    font-size:40px;
+}
+
+.card{
+    background:rgba(255,255,255,0.15);
+    margin:20px 0;
+    padding:20px;
+    border-radius:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.answer{
+    display:none;
+    margin-top:15px;
+    color:#fff;
+    font-size:18px;
+}
+
+button{
+    margin-top:40px;
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#ff4f81;
+    font-size:18px;
+    cursor:pointer;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>💖 Do You Remember? 💖</h1>
+
+<div class="card" onclick="toggle('a1')">
+❤️ Do you remember our first conversation?
+<div class="answer" id="a1">
+It was the beginning of my favorite story. 💌
+</div>
+</div>
+
+<div class="card" onclick="toggle('a2')">
+😂 Do you remember the first time you made me laugh?
+<div class="answer" id="a2">
+I knew every moment with you would be special. ✨
+</div>
+</div>
+
+<div class="card" onclick="toggle('a3')">
+📸 Do you remember our favorite picture together?
+<div class="answer" id="a3">
+We'll place our photo here later. ❤️
+</div>
+</div>
+
+<div class="card" onclick="toggle('a4')">
+🌙 Do you remember our late-night talks?
+<div class="answer" id="a4">
+Those conversations are memories I'll always treasure. 🌙
+</div>
+</div>
+
+<button onclick="location.href='gift.html'">
+Continue ❤️
+</button>
+
+</div>
+
+<script>
+function toggle(id){
+    let box = document.getElementById(id);
+    if(box.style.display=="block"){
+        box.style.display="none";
+    }else{
+        box.style.display="block";
+    }
+}
+</script>
+
+</body>
+</html>
