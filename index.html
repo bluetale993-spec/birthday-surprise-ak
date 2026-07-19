@@ -11,6 +11,11 @@
 
 <body>
 
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="Subramaniapuram_-_Kangal_irandal_(mp3.pm).mp3" type="audio/mpeg">
+</audio>
+
 <div class="container">
 
 <h1>Happy Birthday ❤️</h1>
@@ -21,7 +26,14 @@
 
 </div>
 
-<script src="script.js"></script>
+<script>
+const music = document.getElementById("bgMusic");
+
+document.getElementById("giftBtn").addEventListener("click", function () {
+    music.play();
+    window.location.href = "welcome.html";
+});
+</script>
 
 </body>
 </html>
