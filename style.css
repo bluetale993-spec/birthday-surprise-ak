@@ -99,3 +99,23 @@ box-shadow:0 10px 25px rgba(0,0,0,.3);
 .gallery img:hover{
 transform:scale(1.08);
 }
+.hearts{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    font-size:28px;
+    opacity:.15;
+    animation:floatHearts 12s linear infinite;
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-end;
+}
+
+@keyframes floatHearts{
+    from{
+        transform:translateY(100vh);
+    }
+    to{
+        transform:translateY(-120vh);
+    }
+}
