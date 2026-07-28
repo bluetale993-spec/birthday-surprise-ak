@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading...</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.loader{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-size:35px;
+font-weight:bold;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{opacity:.3;}
+50%{opacity:1;}
+100%{opacity:.3;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="loader">
+❤️ Preparing Something Special... ❤️
+</div>
+
+<script>
+setTimeout(()=>{
+window.location.href="index.html";
+},3000);
+</script>
+
+</body>
+</html>
