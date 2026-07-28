@@ -6,16 +6,19 @@
 
 body{
   font-family:Arial,sans-serif;
-  min-height: 100vh;
+  min-height:100vh;
   display:flex;
   justify-content:center;
-  align-items:center;
+  align-items:flex-start;
   background:linear-gradient(135deg,#090b2a,#1f1147,#4d1b72);
-  overflow-y: auto;
+  overflow-y:auto;
   color:white;
+  padding:40px 20px;
 }
 
 .container{
+  width:100%;
+  max-width:800px;
   text-align:center;
   background:rgba(255,255,255,0.1);
   padding:40px;
@@ -23,6 +26,7 @@ body{
   backdrop-filter:blur(15px);
   box-shadow:0 0 30px rgba(255,255,255,.15);
   animation:fadeIn 1.5s ease;
+  margin:20px 0;
 }
 
 h1{
