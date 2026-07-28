@@ -6,12 +6,12 @@
 
 body{
   font-family:Arial,sans-serif;
-  height:100vh;
+  min-height: 100vh;
   display:flex;
   justify-content:center;
   align-items:center;
   background:linear-gradient(135deg,#090b2a,#1f1147,#4d1b72);
-  overflow:hidden;
+  overflow-y: auto;
   color:white;
 }
 
