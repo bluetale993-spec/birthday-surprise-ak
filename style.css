@@ -61,3 +61,18 @@ button:hover{
     transform:translateY(0);
   }
 }
+.memory-card{
+    background:rgba(255,255,255,0.15);
+    padding:20px;
+    margin:20px 0;
+    border-radius:20px;
+    transition:0.4s;
+}
+
+.memory-card:hover{
+    transform:scale(1.05);
+}
+
+.memory-card h2{
+    margin-bottom:10px;
+}
