@@ -53,6 +53,11 @@ gift.onclick = function(){
 
     // Gift opens
     gift.innerHTML = "🎉";
+    confetti({
+    particleCount: 180,
+    spread: 120,
+    origin: { y: 0.6 }
+});
 
     // Small animation
     gift.style.transform = "scale(1.2)";
