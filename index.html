@@ -137,7 +137,8 @@ const music=document.getElementById("bgMusic");
 
 document.getElementById("startBtn").onclick = async () => {
     await music.play().catch(() => {});
-    window.location.href = "welcome.html";
+    sessionStorage.setItem("musicPlaying","true");
+    window.location.href = "loading.html";
 };
 </script>
 <script src="music.js"></script>
