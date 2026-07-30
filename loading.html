@@ -3,93 +3,97 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Loading...</title>
-<link rel="stylesheet" href="style.css">
+<title>Preparing Something Special ❤️</title>
 
 <style>
-body{
-margin:0;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-overflow:hidden;
-background:linear-gradient(-45deg,#ff758c,#ff7eb3,#8e44ad,#6a11cb);
-background-size:400% 400%;
-animation:bgMove 10s ease infinite;
-font-family:Arial,sans-serif;
-color:white;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.loader{
-text-align:center;
-z-index:2;
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+    font-family:Arial,sans-serif;
+    color:white;
+    background:linear-gradient(-45deg,#ff758c,#ff7eb3,#8e44ad,#6a11cb);
+    background-size:400% 400%;
+    animation:bgMove 10s ease infinite;
+}
+
+.container{
+    text-align:center;
 }
 
 .heart{
-font-size:80px;
-animation:beat 1s infinite;
+    font-size:90px;
+    animation:beat 1s infinite;
 }
 
 h1{
-margin:20px 0 10px;
-font-size:32px;
+    margin-top:20px;
+    font-size:32px;
 }
 
 p{
-font-size:18px;
-opacity:.9;
+    margin-top:10px;
+    font-size:18px;
+    opacity:.9;
 }
 
 .loading-bar{
-width:240px;
-height:8px;
-margin:25px auto;
-background:rgba(255,255,255,.3);
-border-radius:20px;
-overflow:hidden;
+    width:260px;
+    height:10px;
+    background:rgba(255,255,255,.3);
+    border-radius:20px;
+    margin:30px auto;
+    overflow:hidden;
 }
 
 .loading-fill{
-height:100%;
-width:0%;
-background:white;
-animation:load 3s linear forwards;
+    width:0%;
+    height:100%;
+    background:white;
+    animation:load 3s linear forwards;
 }
 
 @keyframes beat{
-0%,100%{transform:scale(1);}
-50%{transform:scale(1.2);}
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.2);}
 }
 
 @keyframes load{
-from{width:0;}
-to{width:100%;}
+    from{width:0%;}
+    to{width:100%;}
 }
 
 @keyframes bgMove{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
 }
 </style>
 </head>
 
 <body>
 
-<div class="loader">
-<div class="heart">❤️</div>
-<h1>Preparing Something Special...</h1>
-<p>Made with all mah love for uh 💖</p>
+<div class="container">
+    <div class="heart">❤️</div>
+    <h1>Preparing Something Special...</h1>
+    <p>Made with all mah love for uh 💖</p>
 
-<div class="loading-bar">
-<div class="loading-fill"></div>
-</div>
+    <div class="loading-bar">
+        <div class="loading-fill"></div>
+    </div>
 </div>
 
 <script>
-setTimeout(()=>{
-window.location.href="index.html";
+setTimeout(function(){
+    window.location.href="index.html";
 },3000);
 </script>
 
