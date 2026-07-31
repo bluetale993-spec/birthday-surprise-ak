@@ -10,7 +10,9 @@
 
 <body>
 
-<!-- We'll add the continuous music code here (same as your other pages) -->
+<div class="progress-container">
+  <div class="progress-bar" style="width:42%;"></div>
+</div>
 
 <div class="container">
 
@@ -21,13 +23,20 @@ Every spin brings back one of our beautiful memories...
 Are uh ready? 💖
 </p>
 
-<button onclick="location.href='journey.html'">
-Continue ❤️
-</button>
+<a href="gallery.html">
+<button>Continue ❤️</button>
+</a>
 
+<div class="hearts">
+  ❤️ 💖 💕 💗 💓
 </div>
 
-<script src="script.js"></script>
+<audio id="bgMusic" loop>
+  <source src="kangal-irandal.mp3" type="audio/mpeg">
+</audio>
+
+<script src="music.js"></script>
+<script src="effects.js"></script>
 
 </body>
 </html>
