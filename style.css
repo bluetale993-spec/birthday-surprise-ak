@@ -217,3 +217,26 @@ border-radius:20px;
     border-radius:20px;
     box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
+.math-card{
+    max-width:700px;
+    margin:40px auto;
+    padding:30px;
+    background:rgba(255,255,255,0.12);
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+}
+
+.math-card hr{
+    border:none;
+    border-top:1px solid rgba(255,255,255,.3);
+}
+
+.math-card h2{
+    color:#ff4d88;
+}
+
+.math-card p{
+    margin:10px 0;
+}
