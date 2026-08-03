@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Just Checking On Uh 🤍</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -28,6 +29,7 @@ padding:30px;
 
 .card{
 max-width:760px;
+width:100%;
 background:rgba(255,255,255,.08);
 backdrop-filter:blur(14px);
 padding:35px;
@@ -36,20 +38,47 @@ text-align:center;
 box-shadow:0 15px 40px rgba(0,0,0,.35);
 }
 
+h1{
+margin-bottom:20px;
+}
+
+p{
+line-height:1.9;
+margin:15px 0;
+}
+
 button{
 margin:12px;
 padding:15px 30px;
 border:none;
 border-radius:40px;
+background:white;
+color:#0d1b2a;
 font-size:17px;
 font-weight:bold;
 cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
 }
 
 .hidden{
 display:none;
 margin-top:25px;
-line-height:1.9;
+animation:fade .5s;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
 </style>
@@ -73,54 +102,38 @@ n seeing everything going on must beh making ur heart feel really heavy. 🫂
 <div id="comfort" class="hidden">
 
 <p>
-
 Hey mah home... 🫂❤️
-
 </p>
 
 <p>
-
-Ik dis is scary...
-
-But pls don't let fear convince uh that the worst will happen.
-
+Ik uh're really concerned abt mah in-laws rn...
+n honestly, anyone who loves them as much as uh do would feel the same. ❤️
 </p>
 
 <p>
-
-They're taking care of themselves, following the safest steps they can, n I'm hoping with all mah heart that they'll beh alright. ❤️
-
+But pls don't let ur mind keep imagining scary possibilities.
+I truly believe they're doing everything they can to stay safe,
+n I'm praying w all mah heart that everything will beh okay. 🫂❤️
 </p>
 
 <p>
-
-Until we hear otherwise...
-
-let's hold onto hope together.
-
+Whenever ur thoughts start racing,
+remember that fear always feels bigger than reality.
+So let's choose hope instead,
+n believe that everything will settle down soon. 🤍
 </p>
 
 <p>
-
-N remember...
-
-uh don't have to carry dis alone.
-
-Lean on meh whenever uh want.
-
-I'm here.
-
-Always.
-
-🫂💙
-
+N please don't carry all dis by urself.
+Whenever ur heart feels heavy,
+lean on meh.
+We'll get through dis together,
+one moment at a time.
+I'm right here.
+Always. ❤️🫂
 </p>
 
-<button onclick="showHug()">
-
-🫂 Hug Meh
-
-</button>
+<button onclick="showHug()">🫂 Hug Meh</button>
 
 </div>
 
@@ -129,21 +142,19 @@ Always.
 <h2>Virtual Hug Loaded 🫂💙</h2>
 
 <p>
-
 *squeezing uh tightly*
 
-We'll get through dis together.
+Sending the biggest hug ever to mah home.
 
-I'm not going anywhere.
+Everything will beh alright.
+
+I'm always here.
 
 ❤️
-
 </p>
 
 <button onclick="location.href='promise.html'">
-
 Continue 💙
-
 </button>
 
 </div>
