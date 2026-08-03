@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Emergency Comfort Kit 🤍</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(180deg,#08111f,#0d1b2a,#132b45,#08111f);
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:
+radial-gradient(white 1px,transparent 1px),
+radial-gradient(white 1px,transparent 1px);
+background-size:120px 120px;
+background-position:0 0,60px 60px;
+opacity:.18;
+animation:stars 30s linear infinite;
+z-index:-1;
+}
+
+@keyframes stars{
+from{transform:translateY(0);}
+to{transform:translateY(-120px);}
+}
+
+.container{
+width:92%;
+max-width:750px;
+margin:auto;
+padding:60px 0;
+}
+
+.hero{
+text-align:center;
+padding:40px 20px;
+margin-bottom:40px;
+}
+
+.hero h1{
+font-size:2.4rem;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.05rem;
+line-height:1.9;
+opacity:.9;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(14px);
+border-radius:25px;
+padding:28px;
+margin:30px 0;
+box-shadow:0 15px 40px rgba(0,0,0,.35);
+transition:.35s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card img{
+width:100%;
+border-radius:20px;
+margin-bottom:18px;
+}
+
+.card h2{
+font-size:1.6rem;
+margin-bottom:12px;
+}
+
+.card p{
+line-height:1.8;
+opacity:.95;
+}
+
+button{
+margin-top:20px;
+padding:15px 30px;
+border:none;
+border-radius:40px;
+background:white;
+color:#0d1b2a;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.hidden{
+display:none;
+margin-top:20px;
+padding:18px;
+background:rgba(255,255,255,.08);
+border-radius:18px;
+line-height:1.8;
+animation:fade .5s;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="hero">
+
+<h1>🌙 Emergency Comfort Kit</h1>
+
+<p>
+
+Hey mah home... 🤍
+
+<br><br>
+
+If uh opened dis page...
+
+Maybe today wasn't very kind to uh.
+
+So before anything else...
+
+Take one slow breath.
+
+Now another.
+
+Good.
+
+Dis place is only for uh.
+
+No pressure.
+
+No pretending.
+
+No "I'm alright."
+
+Just comfort.
+
+🫂❤️
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="touchu.jpg">
+
+<h2>🫂 Unlimited Hug</h2>
+
+<p>
+
+Come here.
+
+No questions.
+
+No explanations.
+
+Just lemme hug uh until ur heart feels a little lighter.
+
+</p>
+
+<button onclick="hug()">
+
+Redeem Hug
+
+</button>
+
+<div class="hidden" id="hug">
+
+🫂
+
+Loading biggest hug...
+
+██████████
+
+Done.
+
+Now stay here for a little while.
+
+Everything else can wait.
+
+🤍
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="all-ears.jpg">
+
+<h2>💌 One Free Rant</h2>
+
+<p>
+
+Talk.
+
+Cry.
+
+Complain.
+
+Say absolutely nothing.
+
+I'll still stay.
+
+</p>
+
+<button onclick="rant()">
+
+Start Ranting
+
+</button>
+
+<div class="hidden" id="rant">
+
+I'm listening.
+
+Not because i have to.
+
+Because i want to.
+
+Take ur time.
+
+❤️
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="kisses-coupon.jpg">
+
+<h2>🎫 Free Kisses Coupon</h2>
+
+<p>
+
+Unlimited validity.
+
+No expiry.
+
+No conditions.
+
+</p>
+
+<button onclick="kiss()">
+
+Claim Coupon
+
+</button>
+
+<div class="hidden" id="kiss">
+
+Coupon Accepted.
+
+Reward:
+
+👫👫👫
+
+Unlimited forehead kisses reserved for mah home.
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="better-me.jpg">
+
+<h2>🌷 Tiny Reminder</h2>
+
+<p>
+
+In case nobody reminded uh today...
+
+Here's one from meh.
+
+</p>
+
+<button onclick="better()">
+
+Open Reminder
+
+</button>
+
+<div class="hidden" id="better">
+
+Uh deserve patience.
+
+Uh deserve kindness.
+
+Uh deserve peace.
+
+N uh deserve someone who'll always stay beside uh.
+
+🤍
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="vitamin-me.jpg">
+
+<h2>💊 Vitamin Me</h2>
+
+<p>
+
+Daily dosage for mah home.
+
+Side effects may include smiling.
+
+</p>
+
+<button onclick="vitamin()">
+
+Take One
+
+</button>
+
+<div class="hidden" id="vitamin">
+
+Dose taken successfully.
+
++100 Comfort
+
++1000 Love
+
+❤️❤️❤️
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="pspsps-cat.jpg">
+
+<h2>🐱 Cat Corner</h2>
+
+<p>
+
+Important question...
+
+</p>
+
+<button onclick="cat()">
+
+Answer
+
+</button>
+
+<div class="hidden" id="cat">
+
+If uh were a cat...
+
+I'd still choose uh.
+
+I'd still love uh.
+
+N yes...
+
+I'd definitely pspsps at uh.
+
+🥹🤍
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="turn-you-on.jpg">
+
+<h2>😂 Smile Mission</h2>
+
+<p>
+
+Mission Objective:
+
+Steal one smile.
+
+</p>
+
+<button onclick="smile()">
+
+Start Mission
+
+</button>
+
+<div class="hidden" id="smile">
+
+Mission Successful.
+
+A tiny smile has been stolen.
+
+Reward unlocked:
+
+🫂
+
+One extra hug.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>❤️ I Need Meh</h2>
+
+<p>
+
+If today feels too heavy...
+
+Press dis.
+
+</p>
+
+<button onclick="needMe()">
+
+I Need Meh
+
+</button>
+
+<div class="hidden" id="need">
+
+Hey mah home...
+
+Take another slow breath.
+
+Everything doesn't have to be okay today.
+
+I'm still here.
+
+Still cheering for uh.
+
+Still believing in uh.
+
+Still choosing uh.
+
+We'll get through dis together.
+
+One day at a time.
+
+🤍🫂
+
+</div>
+
+</div>
+
+<script>
+
+function hug(){
+document.getElementById("hug").style.display="block";
+}
+
+function rant(){
+document.getElementById("rant").style.display="block";
+}
+
+function kiss(){
+document.getElementById("kiss").style.display="block";
+}
+
+function better(){
+document.getElementById("better").style.display="block";
+}
+
+function vitamin(){
+document.getElementById("vitamin").style.display="block";
+}
+
+function cat(){
+document.getElementById("cat").style.display="block";
+}
+
+function smile(){
+document.getElementById("smile").style.display="block";
+}
+
+function needMe(){
+document.getElementById("need").style.display="block";
+window.scrollTo({
+top:document.body.scrollHeight,
+behavior:"smooth"
+});
+}
+
+</script>
+
+</div>
+
+</body>
+</html>
