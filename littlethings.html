@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Little Things ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#06142f,#0d2452,#153979,#0a1836);
+color:white;
+overflow-x:hidden;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#75c9ff;
+border-radius:20px;
+}
+
+/* Floating Stars */
+
+.star{
+position:fixed;
+width:3px;
+height:3px;
+background:white;
+border-radius:50%;
+pointer-events:none;
+opacity:.8;
+animation:starMove linear infinite;
+}
+
+@keyframes starMove{
+
+0%{
+transform:translateY(110vh);
+opacity:0;
+}
+
+15%{
+opacity:1;
+}
+
+85%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-20vh);
+opacity:0;
+}
+
+}
+
+/* Hero */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+text-align:center;
+
+padding:25px;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:450px;
+
+height:450px;
+
+border-radius:50%;
+
+background:radial-gradient(circle,
+rgba(126,200,255,.35),
+transparent 70%);
+
+animation:pulse 6s infinite;
+
+}
+
+@keyframes pulse{
+
+0%,100%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.2);
+
+}
+
+}
+
+.hero h1{
+
+font-size:3rem;
+
+color:#c9ebff;
+
+text-shadow:0 0 25px #73c8ff;
+
+z-index:2;
+
+}
+
+.hero p{
+
+margin-top:28px;
+
+max-width:700px;
+
+line-height:1.9;
+
+font-size:1.15rem;
+
+color:#eef8ff;
+
+z-index:2;
+
+}
+
+.scroll{
+
+margin-top:60px;
+
+font-size:18px;
+
+color:#8fd6ff;
+
+animation:bounce 2s infinite;
+
+z-index:2;
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(12px);
+
+}
+
+}
+
+.gallery{
+
+width:min(950px,92%);
+
+margin:auto;
+
+padding-bottom:120px;
+
+}
+
+/* Cards */
+
+.card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.12);
+
+border-radius:30px;
+
+padding:22px;
+
+margin:80px 0;
+
+box-shadow:0 15px 45px rgba(0,0,0,.25);
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:1s;
+
+}
+
+.card.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+.card img{
+
+width:100%;
+
+display:block;
+
+border-radius:22px;
+
+transition:.6s;
+
+box-shadow:0 0 25px rgba(126,200,255,.25);
+
+}
+
+.card:hover img{
+
+transform:scale(1.02);
+
+box-shadow:0 0 45px rgba(126,200,255,.5);
+
+}
+
+.caption{
+
+padding:25px 10px 10px;
+
+text-align:center;
+
+}
+
+.caption h2{
+
+font-size:30px;
+
+margin-bottom:15px;
+
+color:#cfeeff;
+
+}
+
+.caption p{
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#eef8ff;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<h1>The Little Things I Wanted Uh To Know 🌙❤️</h1>
+
+<p>
+
+These aren't just pictures...
+
+They're little moments that reminded meh of uh.
+
+So I collected them here,
+
+hoping that whenever uh look at them,
+
+uh'll remember one thing—
+
+uh're loved more than words could ever explain.
+
+🫂❤️
+
+</p>
+
+<div class="scroll">
+
+⬇ Scroll Slowly ⬇
+
+</div>
+
+</section>
+
+<section class="gallery">
+  <div class="card">
+<img src="images/1-light.jpg" alt="Light">
+
+<div class="caption">
+<h2>Some People Carry Light Within Them ✨</h2>
+<p>
+The moment I saw this,
+mah first thought was...
+"Dis is literally uh."
+
+Some people brighten a room.
+
+Uh somehow brighten mah whole life.
+
+Thank uh for being the light
+I never knew I needed.
+
+❤️
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/2-coffee.jpg" alt="Coffee">
+
+<div class="caption">
+<h2>Life Is Too Short ☕</h2>
+<p>
+Life is too short
+to wait for the "perfect time."
+
+So lemme tell uh now...
+
+Thank uh
+for every smile,
+every laugh,
+every little moment.
+
+Meeting uh
+was one of the most beautiful things
+that ever happened to meh.
+
+🫂❤️
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/3-morning.jpg" alt="Morning">
+
+<div class="caption">
+<h2>Every Morning 🌤️</h2>
+<p>
+Whenever I imagine the future...
+
+I don't imagine luxury.
+
+I imagine sleepy mornings,
+messy hair,
+warm coffee,
+lots of laughter,
+
+and uh.
+
+That's enough
+to make every dream complete.
+
+❤️
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/4-sleepy.jpg" alt="Sleepy">
+
+<div class="caption">
+<h2>Just Stay Here 🌙</h2>
+<p>
+One day...
+
+No calls ending.
+
+No "I miss uh."
+
+No distance.
+
+Just peaceful silence,
+holding uh close,
+while the whole world
+can wait.
+
+❤️
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/5-comfort.jpg" alt="Comfort">
+
+<div class="caption">
+<h2>Home 🏡❤️</h2>
+<p>
+People think
+home is made of walls.
+
+Mah heart disagrees.
+
+Home...
+
+is the feeling
+I get whenever I'm with uh.
+
+No place
+has ever felt safer.
+
+🫂❤️
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/6-proud.jpg" alt="Proud">
+
+<div class="caption">
+<h2>Always Proud Of Uh 🌸</h2>
+<p>
+Even if uh doubt urself...
+
+I'll never stop believing in uh.
+
+Not because uh're perfect...
+
+but because
+uh're genuinely wonderful.
+
+I'll forever be proud
+to call uh mah home.
+
+❤️
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/7-honest.jpg" alt="Honest">
+
+<div class="caption">
+<h2>Can I Tell Uh Something? 💙</h2>
+<p>
+Mah favourite thing about us...
+
+is knowing
+I can tell uh everything.
+
+The happiest moments.
+
+The saddest ones.
+
+The random ones.
+
+Because uh've always
+been mah safest place.
+
+❤️
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/8-understand.jpg" alt="Understand">
+
+<div class="caption">
+<h2>Understanding 🤍</h2>
+<p>
+We'll never be perfect.
+
+We'll misunderstand things.
+
+We'll make mistakes.
+
+But I hope
+we'll always choose
+to understand each other
+before giving up.
+
+Because us...
+
+is worth every effort.
+
+❤️
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/9-talk.jpg" alt="Talk">
+
+<div class="caption">
+<h2>Promise Meh Dis... 🫂</h2>
+<p>
+No matter what happens...
+
+Promise we'll always talk.
+
+Even when it's difficult.
+
+Even when we're upset.
+
+Because I'd rather solve
+a thousand problems
+with uh...
+
+than spend
+one day without uh.
+
+Forever choosing us.
+
+❤️
+</p>
+</div>
+</div>
+</section>
+
+<section class="ending" id="ending">
+
+<h2 id="line1"></h2>
+<h2 id="line2"></h2>
+<h2 id="line3"></h2>
+<h2 id="line4"></h2>
+<h2 id="line5"></h2>
+
+<div class="heart">❤️</div>
+
+<a href="gift.html" class="back-btn">
+One Last Hug 🫂❤️
+</a>
+
+</section>
+
+<style>
+
+.ending{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+text-align:center;
+
+padding:40px 25px;
+
+background:linear-gradient(180deg,#081229,#040816);
+
+}
+
+.ending h2{
+
+opacity:0;
+
+transform:translateY(30px);
+
+transition:1s;
+
+margin:18px 0;
+
+max-width:850px;
+
+line-height:1.8;
+
+}
+
+#line1{
+
+font-size:42px;
+
+font-weight:700;
+
+color:white;
+
+}
+
+#line2{
+
+font-size:25px;
+
+color:#dcefff;
+
+}
+
+#line3{
+
+font-size:30px;
+
+color:white;
+
+}
+
+#line4{
+
+font-size:22px;
+
+color:#c8eaff;
+
+}
+
+#line5{
+
+font-size:36px;
+
+font-weight:700;
+
+color:#8fd4ff;
+
+text-shadow:0 0 18px #7ec8ff;
+
+margin-top:25px;
+
+}
+
+.heart{
+
+font-size:70px;
+
+margin-top:50px;
+
+animation:heartbeat 1.2s infinite;
+
+filter:drop-shadow(0 0 18px #ff6fa5);
+
+}
+
+@keyframes heartbeat{
+
+0%,100%{
+
+transform:scale(1);
+
+}
+
+25%{
+
+transform:scale(1.15);
+
+}
+
+50%{
+
+transform:scale(.95);
+
+}
+
+75%{
+
+transform:scale(1.18);
+
+}
+
+}
+
+.back-btn{
+
+margin-top:55px;
+
+display:inline-block;
+
+padding:16px 38px;
+
+border-radius:40px;
+
+background:linear-gradient(45deg,#7ec8ff,#4ea8ff);
+
+text-decoration:none;
+
+color:white;
+
+font-weight:600;
+
+font-size:18px;
+
+transition:.4s;
+
+box-shadow:0 0 25px rgba(126,200,255,.45);
+
+}
+
+.back-btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 45px rgba(126,200,255,.7);
+
+}
+
+@media(max-width:768px){
+
+#line1{font-size:30px;}
+
+#line2{font-size:20px;}
+
+#line3{font-size:24px;}
+
+#line4{font-size:18px;}
+
+#line5{font-size:27px;}
+
+.heart{font-size:58px;}
+
+.back-btn{
+
+padding:14px 30px;
+
+font-size:16px;
+
+}
+
+}
+
+</style>
+
+<script>
+
+/* Scroll Animation */
+
+const cards=document.querySelectorAll(".card");
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},{threshold:.2});
+
+cards.forEach(card=>observer.observe(card));
+
+/* Floating Stars */
+
+for(let i=0;i<90;i++){
+
+let star=document.createElement("div");
+
+star.className="star";
+
+star.style.left=Math.random()*100+"vw";
+
+star.style.animationDuration=(8+Math.random()*8)+"s";
+
+star.style.animationDelay=Math.random()*8+"s";
+
+document.body.appendChild(star);
+
+}
+
+/* Ending */
+
+const ending=document.querySelector("#ending");
+
+let played=false;
+
+const endObserver=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting && !played){
+
+played=true;
+
+showEnding();
+
+}
+
+});
+
+},{threshold:.6});
+
+endObserver.observe(ending);
+
+function reveal(id,text,time){
+
+setTimeout(()=>{
+
+const el=document.getElementById(id);
+
+el.innerHTML=text;
+
+el.style.opacity="1";
+
+el.style.transform="translateY(0)";
+
+},time);
+
+}
+
+function showEnding(){
+
+reveal("line1","If uh've reached here...",500);
+
+reveal("line2","Thank uh for reading every little piece of mah heart. ❤️",2500);
+
+reveal("line3","Dis wasn't just a website...",5200);
+
+reveal("line4","It was every hug, every smile, every laugh and every feeling I wished I could give uh in person. 🫂",8300);
+
+reveal("line5","Happy Birthday Mah Home. I'll choose uh... Again. Again. And Again. ❤️",11800);
+
+}
+
+</script>
+
+</body>
+</html>
