@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Us ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#06142f,#0d2452,#153979,#0a1836);
+color:white;
+overflow-x:hidden;
+}
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#75c9ff;
+border-radius:20px;
+}
+
+.star{
+position:fixed;
+width:3px;
+height:3px;
+background:white;
+border-radius:50%;
+pointer-events:none;
+opacity:.8;
+animation:starMove linear infinite;
+}
+
+@keyframes starMove{
+0%{transform:translateY(110vh);opacity:0;}
+15%{opacity:1;}
+85%{opacity:1;}
+100%{transform:translateY(-20vh);opacity:0;}
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:25px;
+position:relative;
+overflow:hidden;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+width:450px;
+height:450px;
+border-radius:50%;
+background:radial-gradient(circle,rgba(255,159,159,.25),rgba(126,200,255,.25),transparent 70%);
+animation:pulse 6s infinite;
+}
+
+@keyframes pulse{
+0%,100%{transform:scale(1);}
+50%{transform:scale(1.2);}
+}
+
+.hero h1{
+font-size:3rem;
+color:#ffe3ea;
+text-shadow:0 0 25px #ff9fb0;
+z-index:2;
+}
+
+.hero p{
+margin-top:28px;
+max-width:700px;
+line-height:1.9;
+font-size:1.15rem;
+color:#eef8ff;
+z-index:2;
+}
+
+.scroll{
+margin-top:60px;
+font-size:18px;
+color:#8fd6ff;
+animation:bounce 2s infinite;
+z-index:2;
+}
+
+@keyframes bounce{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(12px);}
+}
+
+.gallery{
+width:min(950px,92%);
+margin:auto;
+padding-bottom:120px;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+border:1px solid var(--accent,rgba(255,255,255,.12));
+border-radius:30px;
+padding:22px;
+margin:80px 0;
+box-shadow:0 15px 45px rgba(0,0,0,.25);
+opacity:0;
+transform:translateY(60px);
+transition:1s;
+}
+
+.card.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.card img{
+width:100%;
+display:block;
+border-radius:22px;
+transition:.6s;
+box-shadow:0 0 25px var(--glow,rgba(126,200,255,.25));
+}
+
+.card:hover img{
+transform:scale(1.02);
+box-shadow:0 0 45px var(--glow,rgba(126,200,255,.5));
+}
+
+.caption{
+padding:25px 10px 10px;
+text-align:center;
+}
+
+.caption h2{
+font-size:30px;
+margin-bottom:15px;
+color:var(--title,#cfeeff);
+}
+
+.caption p{
+font-size:18px;
+line-height:1.9;
+color:#eef8ff;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<h1>Us 🤍</h1>
+
+<p>
+Not perfect.
+
+Not always equal.
+
+But always chosen.
+
+Dis is what us means to meh.
+
+❤️
+</p>
+
+<div class="scroll">
+⬇ Scroll Slowly ⬇
+</div>
+
+</section>
+
+<section class="gallery">
+
+<div class="card" style="--accent:rgba(255,159,159,.35);--glow:rgba(255,159,159,.35);--title:#ffd3da">
+<img src="marriage-5050.jpg" alt="marriage isn't 50/50">
+<div class="caption">
+<h2>Not 50/50 🤍</h2>
+<p>
+Marriage isn't 50/50.
+
+Some days uh give more.
+Some days I give more.
+
+That's not unfair...
+
+that's just love
+showing up when it's needed.
+</p>
+</div>
+</div>
+
+<div class="card" style="--accent:rgba(255,214,140,.35);--glow:rgba(255,214,140,.35);--title:#ffe6b8">
+<img src="give-80.jpg" alt="give 80%">
+<div class="caption">
+<h2>Some Days 🛍️</h2>
+<p>
+Some days,
+uh can only give 20%.
+
+So I'll give 80%.
+
+Not because I have to...
+
+but because
+that's what us means.
+</p>
+</div>
+</div>
+
+<div class="card" style="--accent:rgba(159,255,196,.35);--glow:rgba(159,255,196,.35);--title:#c3ffdc">
+<img src="every-season.jpg" alt="every season">
+<div class="caption">
+<h2>Every Season 🍂❄️🌸</h2>
+<p>
+It's not about
+equal effort every day.
+
+It's about showing up...
+
+through every season,
+every mood,
+every version of us.
+</p>
+</div>
+</div>
+
+<div class="card" style="--accent:rgba(196,159,255,.35);--glow:rgba(196,159,255,.35);--title:#ddc9ff">
+<img src="not-keeping-score.jpg" alt="not keeping score">
+<div class="caption">
+<h2>Carrying It Together 🧺</h2>
+<p>
+Dis is what us really is.
+
+Not keeping score.
+
+Just making sure
+neither of us
+carries the weight alone.
+</p>
+</div>
+</div>
+
+<div class="card" style="--accent:rgba(126,200,255,.35);--glow:rgba(126,200,255,.35);--title:#cfeeff">
+<img src="support-stress.jpg" alt="support during stress">
+<div class="caption">
+<h2>Under One Umbrella ☔</h2>
+<p>
+Couples who show up
+for each other
+during the hard days...
+
+end up
+with the strongest,
+happiest us.
+</p>
+</div>
+</div>
+
+<div class="card" style="--accent:rgba(255,201,120,.35);--glow:rgba(255,201,120,.35);--title:#ffe3ba">
+<img src="choosing-each-other.jpg" alt="choosing each other">
+<div class="caption">
+<h2>Even When It's Unfair ⛰️</h2>
+<p>
+Uh strongest us
+was never
+about perfect balance.
+
+It's about choosing each other...
+
+even when life isn't fair.
+</p>
+</div>
+</div>
+
+<div class="card" style="--accent:rgba(255,159,201,.35);--glow:rgba(255,159,201,.35);--title:#ffd6e8">
+<img src="stop-being-team.jpg" alt="stop being a team">
+<div class="caption">
+<h2>Never A Scoreboard 📓</h2>
+<p>
+The moment I start counting
+"I did more, uh did less"...
+
+we stop being a team.
+
+So I'll never keep count.
+
+I'll just keep choosing uh.
+</p>
+</div>
+</div>
+
+</section>
+
+<script>
+
+const cards=document.querySelectorAll(".card");
+const observer=new IntersectionObserver((entries)=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+},{threshold:.2});
+cards.forEach(card=>observer.observe(card));
+
+for(let i=0;i<90;i++){
+let star=document.createElement("div");
+star.className="star";
+star.style.left=Math.random()*100+"vw";
+star.style.animationDuration=(8+Math.random()*8)+"s";
+star.style.animationDelay=Math.random()*8+"s";
+document.body.appendChild(star);
+}
+
+</script>
+
+</body>
+</html>
