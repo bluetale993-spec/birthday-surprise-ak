@@ -240,3 +240,34 @@ border-radius:20px;
 .math-card p{
     margin:10px 0;
 }
+/* Words I'll Never Forget */
+
+.memory-img{
+    width:100%;
+    max-width:350px;
+    display:block;
+    margin:30px auto;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(255,105,180,.35);
+    transition:.4s;
+}
+
+.memory-img:hover{
+    transform:scale(1.03);
+}
+
+.next-btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#ff4fa3;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.next-btn:hover{
+    transform:scale(1.08);
+}
